@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .div {
+            background-color: #3498db;
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .div:nth-child(2) {
+            background-color: #e74c3c;
+        }
+        
+        .div:nth-child(3) {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div">
+            <h2>Div 1</h2>
+            <p>Responsive content here</p>
+        </div>
+        <div class="div">
+            <h2>Div 2</h2>
+            <p>Responsive content here</p>
+        </div>
+        <div class="div">
+            <h2>Div 3</h2>
+            <p>Responsive content here</p>
+        </div>
+    </div>
+</body>
+</html>
